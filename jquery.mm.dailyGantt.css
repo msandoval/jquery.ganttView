@@ -1,0 +1,138 @@
+/*
+jQuery.ganttView v.0.8.0
+Copyright (c) 2010 JC Grubbs - jc.grubbs@devmynd.com
+MIT License Applies
+*/
+
+div.dailyGantt-hzheader-month,
+div.dailyGantt-hzheader-day,
+div.dailyGantt-vtheader,
+div.dailyGantt-vtheader-item-name,
+div.dailyGantt-vtheader-series,
+div.dailyGantt-grid,
+div.dailyGantt-grid-row-cell {
+	float: left;
+}
+
+div.dailyGantt-hzheader-month,
+div.dailyGantt-hzheader-day {
+	text-align: center;
+}
+
+div.dailyGantt-grid-row-cell.last,
+div.dailyGantt-hzheader-day.last,
+div.dailyGantt-hzheader-month.last {
+	border-right: none;
+}
+
+div.dailyGantt {
+	border: 1px solid #999;
+}
+
+
+/* Horizontal Header */
+
+div.dailyGantt-hzheader-month {
+	width: 60px;
+	height: 20px;
+	border-right: 1px solid #d0d0d0;
+	line-height: 20px;
+}
+
+div.dailyGantt-hzheader-day {
+	width: 20px;
+	height: 20px;
+	border-right: 1px solid #f0f0f0;
+	border-top: 1px solid #d0d0d0;
+	line-height: 20px;
+	color: #777;
+}
+
+
+/* Vertical Header */
+
+div.dailyGantt-vtheader {
+	margin-top: 41px;
+	width: 240px;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+div.dailyGantt-vtheader-item {
+	overflow: hidden;
+	color: #666;
+}
+
+div.dailyGantt-vtheader-item-name {
+	width: 100px;
+	padding-left: 5px;
+	border-top: 1px solid #d0d0d0;
+	line-height: 16px;
+}
+
+div.dailyGantt-vtheader-series-name {
+	width: 130px;
+	height: 31px;
+	border-top: 1px solid #d0d0d0;
+	line-height: 16px;
+	padding-left: 5px;
+}
+
+
+/* Slider */
+
+div.dailyGantt-slide-container {
+	overflow: auto;
+	border-left: 1px solid #999;
+}
+
+
+/* Grid */
+
+div.dailyGantt-grid-row-cell {
+	width: 20px;
+	height: 31px;
+	border-right: 1px solid #f0f0f0;
+	border-top: 1px solid #f0f0f0;
+}
+
+div.dailyGantt-grid-row-cell.dailyGantt-weekend {
+	background-color: #fafafa;
+}
+
+
+/* Blocks */
+
+div.dailyGantt-blocks {
+	margin-top: 40px;
+}
+
+div.dailyGantt-block-container {
+	height: 28px;
+	padding-top: 4px;
+}
+
+div.dailyGantt-block {
+	position: relative;
+	height: 25px;
+	background-color: #E5ECF9;
+	border: 1px solid #c0c0c0;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+div.dailyGantt-block-text {
+	position: absolute;
+	height: 12px;
+	font-size: 0.8em;
+	color: #999;
+	padding: 2px 3px;
+}
+
+
+/* Adjustments for jQuery UI Styling */
+
+div.dailyGantt-block div.ui-resizable-handle.ui-resizable-s {
+	bottom: -0;
+}

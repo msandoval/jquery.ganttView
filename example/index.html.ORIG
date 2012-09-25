@@ -5,7 +5,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../lib/jquery-ui-1.8.4.css" />
 	<link rel="stylesheet" type="text/css" href="reset.css" />
-	<link rel="stylesheet" type="text/css" href="../jquery.mm.dailyGantt.css" />
+	<link rel="stylesheet" type="text/css" href="../jquery.ganttView.css" />
 	<style type="text/css">
 		body {
 			font-family: tahoma, verdana, helvetica;
@@ -24,11 +24,11 @@
 	<script type="text/javascript" src="../lib/jquery-1.4.2.js"></script>
 	<script type="text/javascript" src="../lib/date.js"></script>
 	<script type="text/javascript" src="../lib/jquery-ui-1.8.4.js"></script>
-	<script type="text/javascript" src="../jquery.mm.gantt.js"></script>
+	<script type="text/javascript" src="../jquery.ganttView.js"></script>
 	<script type="text/javascript" src="data.js"></script>
 	<script type="text/javascript">
 		$(function () {
-			$("#ganttChart").dailyGantt({ 
+			$("#ganttChart").ganttView({ 
 				data: ganttData,
 				slideWidth: 900,
 				behavior: {
